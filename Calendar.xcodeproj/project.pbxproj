@@ -14,6 +14,9 @@
 		6351A77A1AD615C900D01DFC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6351A7791AD615C900D01DFC /* Images.xcassets */; };
 		6351A77D1AD615C900D01DFC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6351A77B1AD615C900D01DFC /* LaunchScreen.xib */; };
 		6351A7891AD615CA00D01DFC /* CalendarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6351A7881AD615CA00D01DFC /* CalendarTests.m */; };
+		6397609D1AD7B8B000B9D561 /* AutoTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6397609C1AD7B8B000B9D561 /* AutoTestViewController.m */; };
+		639760A01AD7B9B200B9D561 /* DateGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6397609F1AD7B9B200B9D561 /* DateGenerator.m */; };
+		639760A21AD7BFA700B9D561 /* AutoTestDates.plist in Resources */ = {isa = PBXBuildFile; fileRef = 639760A11AD7BFA700B9D561 /* AutoTestDates.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		6351A7821AD615CA00D01DFC /* CalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6351A7871AD615CA00D01DFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6351A7881AD615CA00D01DFC /* CalendarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarTests.m; sourceTree = "<group>"; };
+		6397609B1AD7B8B000B9D561 /* AutoTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoTestViewController.h; sourceTree = "<group>"; };
+		6397609C1AD7B8B000B9D561 /* AutoTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoTestViewController.m; sourceTree = "<group>"; };
+		6397609E1AD7B9B200B9D561 /* DateGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateGenerator.h; sourceTree = "<group>"; };
+		6397609F1AD7B9B200B9D561 /* DateGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateGenerator.m; sourceTree = "<group>"; };
+		639760A11AD7BFA700B9D561 /* AutoTestDates.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AutoTestDates.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +93,14 @@
 				6351A7711AD615C900D01DFC /* AppDelegate.m */,
 				6351A7731AD615C900D01DFC /* ViewController.h */,
 				6351A7741AD615C900D01DFC /* ViewController.m */,
+				6397609B1AD7B8B000B9D561 /* AutoTestViewController.h */,
+				6397609C1AD7B8B000B9D561 /* AutoTestViewController.m */,
 				6351A7761AD615C900D01DFC /* Main.storyboard */,
 				6351A7791AD615C900D01DFC /* Images.xcassets */,
 				6351A77B1AD615C900D01DFC /* LaunchScreen.xib */,
 				6351A76C1AD615C900D01DFC /* Supporting Files */,
+				6397609E1AD7B9B200B9D561 /* DateGenerator.h */,
+				6397609F1AD7B9B200B9D561 /* DateGenerator.m */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -98,6 +110,7 @@
 			children = (
 				6351A76D1AD615C900D01DFC /* Info.plist */,
 				6351A76E1AD615C900D01DFC /* main.m */,
+				639760A11AD7BFA700B9D561 /* AutoTestDates.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -202,6 +215,7 @@
 				6351A7781AD615C900D01DFC /* Main.storyboard in Resources */,
 				6351A77D1AD615C900D01DFC /* LaunchScreen.xib in Resources */,
 				6351A77A1AD615C900D01DFC /* Images.xcassets in Resources */,
+				639760A21AD7BFA700B9D561 /* AutoTestDates.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,8 +234,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6351A7751AD615C900D01DFC /* ViewController.m in Sources */,
+				639760A01AD7B9B200B9D561 /* DateGenerator.m in Sources */,
 				6351A7721AD615C900D01DFC /* AppDelegate.m in Sources */,
 				6351A76F1AD615C900D01DFC /* main.m in Sources */,
+				6397609D1AD7B8B000B9D561 /* AutoTestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +428,7 @@
 				6351A78E1AD615CA00D01DFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6351A78F1AD615CA00D01DFC /* Build configuration list for PBXNativeTarget "CalendarTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +437,7 @@
 				6351A7911AD615CA00D01DFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
